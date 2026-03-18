@@ -1,11 +1,8 @@
-from utils import *
+from utils import flip, count_letters
 
-mensaje_original = input("Please type your message\n")
+message = input("Please type your message\n")
+flipped_message = flip(message)
+count_a = count_letters(message, 'a')
+encoded_message = flipped_message + str(count_a)
 
-mensaje_invertido = flip(mensaje_original)
-
-conteo_aes = count_letters(mensaje_original)
-
-mensaje_codificado = str(mensaje_invertido) + str(conteo_aes)
-
-print(f"Your encoded message is: {mensaje_codificado}")
+print("Your encoded message is:", encoded_message)
