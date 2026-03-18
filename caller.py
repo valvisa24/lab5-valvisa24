@@ -1,9 +1,8 @@
-from mystery_module import transform_data
+import mystery_module
 
-x_input = int(input("Enter x: "))
-y_input = float(input("Enter y: "))
+x = int(input())
+y = float(input())
 
-resultado = transform_data(x_input, y_input, "quiz_test")
+resultado = mystery_module.transform_data(x, y, "quiz_test")
 
 print(resultado)
-
