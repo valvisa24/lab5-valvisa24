@@ -1,9 +1,12 @@
-def list_shift(lista_flotantes, valor_sumar):
+def list_shift(lista, valor_flotante):
+   
+    for i in range(len(lista)):
+        lista[i] += valor_flotante
 
-    for i in range(len(lista_flotantes)):
-        lista_flotantes[i] += valor_sumar
+def calc_avg(lista):
+   
+    return sum(lista) / len(lista)
 
-
-def calc_avg(lista_flotantes):
-    conteo = len(lista_flotantes)
-    return float(promedio)
+def print_normalized(lista):
+    
+    print(lista)
