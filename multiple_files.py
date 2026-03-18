@@ -1,7 +1,11 @@
 from utils import *
 
-mensaje = input("Please type your message\n")
-invertido = flip(mensaje)
-conteo = count_letters(mensaje)
+mensaje_original = input("Please type your message\n")
 
-print(f"Your encoded message is: {invertido}{conteo}")
+mensaje_invertido = flip(mensaje_original)
+
+conteo_aes = count_letters(mensaje_original)
+
+mensaje_codificado = str(mensaje_invertido) + str(conteo_aes)
+
+print(f"Your encoded message is: {mensaje_codificado}")
