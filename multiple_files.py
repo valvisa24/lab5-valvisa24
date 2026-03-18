@@ -1,10 +1,6 @@
-from utils import *
+from utils import flip, count_letters
 
 message = input("Please type your message\n")
+encoded = flip(message) + str(count_letters(message, 'a'))
 
-flipped = flip(message)
-count_a = count_letters(message, 'a')
-
-encoded = flipped + str(count_a)
-
-print(f"Your encoded message is: {encoded}")
+print("Your encoded message is: " + encoded)
